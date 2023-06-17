@@ -16,7 +16,9 @@ class CustomerController extends Controller
 
     public function index()
     {
-        return view('dashboard.customer.list');
+        $customers = $this->customersModel::get();
+
+        return view('dashboard.customer.list', [ 'customers' => $customers ]);
     }
 
     public function create()
