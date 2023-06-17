@@ -20,6 +20,7 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>CPF</th>
+                <th>Nascimento</th>
                 <th>Sexo</th>
                 <th>Ação</th>
             </tr>
@@ -30,6 +31,7 @@
                         <td>{{ $item->id }}</td>
                         <td>{{ $item->full_name }}</td>
                         <td>{{ $item->document }}</td>
+                        <td>{{ Carbon\Carbon::parse($item->birth)->format('d/m/Y') }}</td>
                         <td>
                             {{ $item->sex == 'M' ? 'Masculino' : ''}}
                             {{ $item->sex == 'F' ? 'Feminino' : ''}}
