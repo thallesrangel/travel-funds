@@ -16,7 +16,7 @@ class CustomerController extends Controller
 
     public function index()
     {
-        $customers = $this->customersModel::get();
+        $customers = $this->customersModel::where('deleted', 0)->get();
 
         return view('dashboard.customer.list', [ 'customers' => $customers ]);
     }
@@ -79,6 +79,19 @@ class CustomerController extends Controller
             return redirect()->route('customer.create')->with('error', 'Ocorreu um erro. Verifique os campos.');
         }
         
-            return redirect()->route('customer')->with('success', 'Registrado com sucesso.');
+        return redirect()->route('customer')->with('success', 'Registrado com sucesso.');
+    }
+
+    public function delete($id)
+    {
+        try {
+           $customer = $this->customersModel::find($id);
+           $customer->deleted = 1;
+           $customer->save();
+        } catch (\Exception $e) {
+            return redirect()->route('customer', $id)->with('error', 'Ocorreu um erro. Verifique os campos.');
+        }
+        
+        return redirect()->route('customer')->with('success', 'Excluído com sucesso.');
     }
 }

@@ -39,6 +39,7 @@ Route::middleware([Authenticated::class])->group(function () {
             Route::get('/', [ CustomerController::class, 'index' ])->name('customer');
             Route::get('/create', [ CustomerController::class, 'create' ])->name('customer.create');
             Route::post('/store', [ CustomerController::class, 'store' ])->name('customer.store');
+            Route::get('/delete/{id}', [ CustomerController::class, 'delete'])->name('customer.delete');
         });
     });
 

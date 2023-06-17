@@ -36,7 +36,7 @@
                             {{ $item->sex == 'O' ? 'Outro' : ''}}
                         </td>
                         <td>
-                            <a class="btn btn-sm btn-default" href="#"><i class="bi bi-trash3 text-danger"></i></a>
+                            <a class="btn btn-sm btn-default" href="{{  route('customer.delete', $item->id) }}"><i class="bi bi-trash3 text-danger"></i></a>
                             <a class="btn btn-sm btn-default" href="#"><i class="bi bi-pencil-square"></i></a>
                             <a class="btn btn-sm btn-default" href="#"><i class="bi bi-eye"></i></a>
                         </td>
