@@ -23,6 +23,7 @@
                 <th>Data da viagem</th>
                 <th>Vagas preenchidas/totais</th>
                 <th>Status</th>
+                <th></th>
                 <th>Ação</th>
             </tr>
             </thead>
@@ -34,6 +35,7 @@
                     <td>27/02/2023</td>
                     <td>28/100</td>
                     <td class="text-success">Ativo</td>
+                    <td><a href="#" class="btn btn-sm btn-outline-primary">Gerenciar</a></td>
                     <td>
                         <a class="btn btn-sm btn-default" href="#"><i class="bi bi-trash3 text-danger"></i></a>
                         <a class="btn btn-sm btn-default" href="#"><i class="bi bi-pencil-square"></i></a>

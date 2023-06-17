@@ -20,7 +20,6 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>CPF</th>
-               
                 <th>Ação</th>
             </tr>
             </thead>

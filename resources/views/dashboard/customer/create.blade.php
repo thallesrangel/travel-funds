@@ -159,9 +159,9 @@
             <div class="row">
                 <h5>Outros</h5>
                 <div class="mb-3">
-                    <label for="notes" class="col-form-label">Observação</label>
-                    <textarea class="form-control" id="notes"></textarea>
-                    <p class="text-danger">{{ $errors->first('notes') }}</p>
+                    <label for="description" class="col-form-label">Observação</label>
+                    <textarea class="form-control" id="description" name="description"></textarea>
+                    <p class="text-danger">{{ $errors->first('description') }}</p>
                 </div>
             </div>
 
