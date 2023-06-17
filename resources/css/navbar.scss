@@ -1,0 +1,62 @@
+.navbar-home ul li a {
+    font-size: 18px;
+    color: #1a1e2c;
+    margin: 0.4rem 0.8rem;
+}
+
+/* Start Responsive Navbar */
+@media (max-width: 767.98px) {
+    .sidebar {
+        display: none;
+    }
+}
+/* End Responsive Navbar */
+
+/* Start Navbar dashboard */
+.dash-navbar {
+    min-height: 100vh;
+}
+
+.dash-navbar .logo {
+    max-width: 130px;
+    margin: 1rem;
+}
+
+.dash-navbar ul li {
+    border-radius: 8px;
+    margin: 0.3rem 0;
+}
+
+.dash-navbar ul li a {
+    &.active {
+        background-color: #344854;
+        border-radius: 12px;
+        color: #FFF;
+
+        > i {
+            color: #FFF;
+        }        
+    }
+}
+
+.dash-navbar ul li:hover {
+    background-color: #e0e8f0;
+    > a {
+        color: rgb(28,43,51);
+    }
+}
+
+.dash-navbar a {
+    color: rgb(28,43,51);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.dash-navbar i {
+    color: rgb(28,43,51);
+    font-size: 1.2rem;
+    margin: 0.8rem;
+}
+
+
+/* End Navbar dashboard */

@@ -1,0 +1,48 @@
+.table
+{
+    background: #FFF;
+    margin-bottom: 0rem;
+    color: #2c3e50;
+}
+
+.table-head th {
+    border-bottom: 0px;
+    padding: 1rem;
+}
+
+.table-body td {
+    padding: 1rem;
+}
+
+th, td {
+    font-weight: unset;
+}
+
+.table-head th {
+    font-size: 1rem;
+    line-height: 1.4;
+    background-color: transparent;
+    font-weight: 520;
+}
+
+.div-table
+{
+    border-radius: 10px;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.table-body tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.table-body i {
+    color: #2C3E50;
+}
+
+.div-table i {
+    font-size: 1.1rem;
+}

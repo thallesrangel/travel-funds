@@ -1,0 +1,7 @@
+@import './global.scss';
+@import './btn.scss';
+@import './form.scss';
+@import './navbar.scss';
+@import './table.scss';
+@import './crud.scss';
+@import '~flatpickr/dist/flatpickr.min.css';
